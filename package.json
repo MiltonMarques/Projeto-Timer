@@ -1,12 +1,14 @@
 {
   "name": "02-projeto-time",
-  "private": true,
+  "private": "true",
   "version": "0.0.0",
-  "homepage": "./",
+  "homepage": "http://{github-MiltonMarques}.github.io/{Projeto-Timer}",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "preview": "vite preview"
   },
   "dependencies": {
